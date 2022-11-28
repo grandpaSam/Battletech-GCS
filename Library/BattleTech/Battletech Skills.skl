@@ -9,8 +9,8 @@
 			"notes": "Skill at piloting a Battlemech",
 			"vtt_notes": "Skill at piloting a Battlemech",
 			"tags": [
-				"Battletech",
 				"Battlemech",
+				"Battletech",
 				"Operating"
 			],
 			"specialization": "Battlemech",
@@ -30,8 +30,8 @@
 			"notes": "Skill at piloting Aerospace craft",
 			"vtt_notes": "Skill at piloting Aerospace craft",
 			"tags": [
-				"Battletech",
 				"Aerospace",
+				"Battletech",
 				"Operating"
 			],
 			"specialization": "Aerospace",
@@ -56,8 +56,8 @@
 			"notes": "Skill at using Battletech weapons and modules",
 			"vtt_notes": "Skill at using Battletech weapons and modules",
 			"tags": [
-				"Battletech",
 				"Battlemech",
+				"Battletech",
 				"Operating"
 			],
 			"specialization": "Battlemech",
@@ -82,8 +82,8 @@
 			"notes": "Skill at using Aerospace weapons and modules",
 			"vtt_notes": "Skill at using Aerospace weapons and modules",
 			"tags": [
-				"Battletech",
 				"Aerospace",
+				"Battletech",
 				"Operating"
 			],
 			"specialization": "Aerospace ",
@@ -98,6 +98,114 @@
 					"type": "skill",
 					"name": "Artillery",
 					"modifier": -2
+				}
+			]
+		},
+		{
+			"id": "e8d82606-35e5-41bc-8824-a57a4b1562cd",
+			"type": "skill",
+			"name": "Battlemech Design",
+			"notes": "This skill is used for modifying battlemechs as well as for designing entirely new machines. Simple modifications like swapping out one weapon for another can be performed with a base line skill check. More complicated modifications like replacing reular heat sinks with double heat sinks will incur a penalty of -5 on the roll. Failing a battlemech design check by 5 or less will result in a functional but quirky system. See the 'quirky equipment' disadvantage later in this section for a description of this effect. Failure by more than 5 (or a critical failure) means that the new system does not function and any materials and time spent creating it are wasted",
+			"vtt_notes": "This skill is used for modifying battlemechs as well as for designing entirely new machines. Simple modifications like swapping out one weapon for another can be performed with a base line skill check. More complicated modifications like replacing reular heat sinks with double heat sinks will incur a penalty of -5 on the roll. Failing a battlemech design check by 5 or less will result in a functional but quirky system. See the 'quirky equipment' disadvantage later in this section for a description of this effect. Failure by more than 5 (or a critical failure) means that the new system does not function and any materials and time spent creating it are wasted",
+			"difficulty": "iq/vh",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Battlemech Repair",
+					"modifier": -6
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Mechannical Engineering"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Battlemech Repair"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 14
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "bd898f02-a1af-445c-a4d4-0b0f17ef630c",
+			"type": "skill",
+			"name": "Fusion Plant Repair",
+			"notes": "Repairing the small fusion reactors used to power all battlemechs and aerospace fighters requires detailed specific knowledge of the inner workings of these sophisticated devices.",
+			"vtt_notes": "Repairing the small fusion reactors used to power all battlemechs and aerospace fighters requires detailed specific knowledge of the inner workings of these sophisticated devices.",
+			"difficulty": "iq/vh",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Battlemech Repair",
+					"modifier": -4
+				}
+			],
+			"prereqs": {
+				"type": "prereq_list",
+				"all": false,
+				"prereqs": [
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Electrical Engineering"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					},
+					{
+						"type": "skill_prereq",
+						"has": true,
+						"name": {
+							"compare": "is",
+							"qualifier": "Nuclear Physics"
+						},
+						"level": {
+							"compare": "at_least",
+							"qualifier": 12
+						}
+					}
+				]
+			}
+		},
+		{
+			"id": "398634fc-c390-4080-9994-33bcf406c590",
+			"type": "skill",
+			"name": "Battlemech Repair",
+			"notes": "This skill is used to perform all basic repair operations on battlemechs and aerospace fighters. (Vehicles can be repaired with the mechannic skill) Anybody with the battlemech repair skill can perform basic operations like routine maintanence and armor repair. All repair rolls assume that the necessary spare parts are available",
+			"vtt_notes": "This skill is used to perform all basic repair operations on battlemechs and aerospace fighters. (Vehicles can be repaired with the mechannic skill) Anybody with the battlemech repair skill can perform basic operations like routine maintanence and armor repair. All repair rolls assume that the necessary spare parts are available",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "skill",
+					"name": "Mechannic",
+					"modifier": -4
 				}
 			]
 		}
