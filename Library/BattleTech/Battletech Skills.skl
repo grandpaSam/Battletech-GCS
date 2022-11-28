@@ -1,0 +1,105 @@
+{
+	"type": "skill_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "8dc2acae-af41-4a3b-ae71-0770ecf1f573",
+			"type": "skill",
+			"name": "Piloting",
+			"notes": "Skill at piloting a Battlemech",
+			"vtt_notes": "Skill at piloting a Battlemech",
+			"tags": [
+				"Battletech",
+				"Battlemech",
+				"Operating"
+			],
+			"specialization": "Battlemech",
+			"difficulty": "dx/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				}
+			]
+		},
+		{
+			"id": "1c017608-98f5-4c4c-a23d-feb20c404298",
+			"type": "skill",
+			"name": "Piloting",
+			"notes": "Skill at piloting Aerospace craft",
+			"vtt_notes": "Skill at piloting Aerospace craft",
+			"tags": [
+				"Battletech",
+				"Aerospace",
+				"Operating"
+			],
+			"specialization": "Aerospace",
+			"difficulty": "dx/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -6
+				},
+				{
+					"type": "skill",
+					"name": "High-Performance Airplane",
+					"modifier": -2
+				}
+			]
+		},
+		{
+			"id": "799dc7f0-e14f-4ebf-b904-72db17b5be7a",
+			"type": "skill",
+			"name": "Gunnery",
+			"notes": "Skill at using Battletech weapons and modules",
+			"vtt_notes": "Skill at using Battletech weapons and modules",
+			"tags": [
+				"Battletech",
+				"Battlemech",
+				"Operating"
+			],
+			"specialization": "Battlemech",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Artillery",
+					"modifier": -2
+				}
+			]
+		},
+		{
+			"id": "10b0f180-051a-4653-9b18-678f5e3ccbe3",
+			"type": "skill",
+			"name": "Gunnery",
+			"notes": "Skill at using Aerospace weapons and modules",
+			"vtt_notes": "Skill at using Aerospace weapons and modules",
+			"tags": [
+				"Battletech",
+				"Aerospace",
+				"Operating"
+			],
+			"specialization": "Aerospace ",
+			"difficulty": "iq/h",
+			"points": 1,
+			"defaults": [
+				{
+					"type": "iq",
+					"modifier": -5
+				},
+				{
+					"type": "skill",
+					"name": "Artillery",
+					"modifier": -2
+				}
+			]
+		}
+	]
+}
