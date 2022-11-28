@@ -1,0 +1,160 @@
+{
+	"type": "trait_list",
+	"version": 4,
+	"rows": [
+		{
+			"id": "1dd325e7-3f9e-4a1f-a155-98c94fa381fc",
+			"type": "trait",
+			"name": "Battletech pilot instincts",
+			"notes": "Take level 1 at IQ 12, Take level 2 at IQ 16",
+			"levels": 1,
+			"features": [
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Piloting"
+					},
+					"tags": {
+						"compare": "is",
+						"qualifier": "Battletech"
+					},
+					"amount": 1,
+					"per_level": true
+				},
+				{
+					"type": "skill_bonus",
+					"selection_type": "skills_with_name",
+					"name": {
+						"compare": "is",
+						"qualifier": "Gunnery"
+					},
+					"tags": {
+						"compare": "is",
+						"qualifier": "Battletech"
+					},
+					"amount": 1,
+					"per_level": true
+				}
+			],
+			"can_level": true,
+			"calc": {
+				"points": 0
+			}
+		},
+		{
+			"id": "1496ccb4-9b58-4eb4-9a08-1c3dd772014d",
+			"type": "trait",
+			"name": "Abnormal physique",
+			"vtt_notes": "Your body proportions make you incompatible with the general one size fits all cockpits. You take a -3 to all piloting skills for vehicles that have not been catered to you. With proper tools and a few hours you can modify a cockpit to fit for you and remove this disadvantage on this vehicle. Do this however applies the \"Unconfortable as hell\" quirk on your vehicle giving this disadvantage to any character piloting a vehicle modified for you.",
+			"userdesc": "Your body proportions make you incompatible with the general one size fits all cockpits. You take a -3 to all piloting skills for vehicles that have not been catered to you. With proper tools and a few hours you can modify a cockpit to fit for you and remove this disadvantage on this vehicle. Do this however applies the \"Unconfortable as hell\" quirk on your vehicle giving this disadvantage to any character piloting a vehicle modified for you.",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "b6bd6ab0-c674-4fe3-9cba-3a6277da3798",
+			"type": "trait",
+			"name": "Extra Hero Point",
+			"vtt_notes": "The character has an extra hero point. No character may ever have more than five hero points.",
+			"userdesc": "The character has an extra hero point. No character may ever have more than five hero points.",
+			"tags": [
+				"Battletech"
+			],
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "fb11146f-3c67-47bf-90f4-9de5e3cb7cbc",
+			"type": "trait",
+			"name": "Heavy Battlemech",
+			"vtt_notes": "The character starts with a heavy battlemech or aerospace fighter instead of a medium one.",
+			"userdesc": "The character starts with a heavy battlemech or aerospace fighter instead of a medium one.",
+			"base_points": 5,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "ac8a41dd-33ec-4e5e-84cb-903b279b94bb",
+			"type": "trait",
+			"name": "Assault battlemech",
+			"vtt_notes": "The character starts with an assault 'mech instead of a medium weight one. Note that aerospace fighters and vehicles do not have an assault weight class, only heavy",
+			"userdesc": "The character starts with an assault 'mech instead of a medium weight one. Note that aerospace fighters and vehicles do not have an assault weight class, only heavy",
+			"base_points": 10,
+			"calc": {
+				"points": 10
+			}
+		},
+		{
+			"id": "bb4d80b1-487d-498b-b62a-eff43f6258b0",
+			"type": "trait",
+			"name": "Modification",
+			"vtt_notes": "The character's 'mech has some kind of modification. One piece of its equipment has been swapped for something else using the same technology base. A good example would be swapping an AC/5 for a PPC. Small amounts of left over tonnage may be spent on other simple changes, but any serious modifications will have to be paid for separately",
+			"userdesc": "The character's 'mech has some kind of modification. One piece of its equipment has been swapped for something else using the same technology base. A good example would be swapping an AC/5 for a PPC. Small amounts of left over tonnage may be spent on other simple changes, but any serious modifications will have to be paid for separately",
+			"base_points": 5,
+			"calc": {
+				"points": 5
+			}
+		},
+		{
+			"id": "06837660-d59b-482f-ae67-93806907c929",
+			"type": "trait",
+			"name": "Disposessed",
+			"vtt_notes": "The character has no battlemech. This disadvantage is available to clan pilots but since clansmen do not own their own machines it means that the character is not qualified to be a mechwarrior and must regain mechwarrior status before this disadvantage may be bought off. Note that being an ex-mechwarrior carries a hefty social stigma in the clans. Clansmen who take this dissadvantage are entitled to the stigma disadvantage as well.",
+			"userdesc": "The character has no battlemech. This disadvantage is available to clan pilots but since clansmen do not own their own machines it means that the character is not qualified to be a mechwarrior and must regain mechwarrior status before this disadvantage may be bought off. Note that being an ex-mechwarrior carries a hefty social stigma in the clans. Clansmen who take this dissadvantage are entitled to the stigma disadvantage as well.",
+			"base_points": -12,
+			"calc": {
+				"points": -12
+			}
+		},
+		{
+			"id": "b4d1b7fd-c6a4-4da2-a674-e92e9915acff",
+			"type": "trait",
+			"name": "Light Battlemech",
+			"vtt_notes": "The character starts with a light 'mech instead of a medium 'mech.",
+			"userdesc": "The character starts with a light 'mech instead of a medium 'mech.",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "077f4fe8-e06c-446e-8724-bfd7960b1305",
+			"type": "trait",
+			"name": "Quirky Equipment",
+			"vtt_notes": "The character's battlemech may be in good repair but it just never seems to operate perfectly. Some chronic problem always seems to be there no matter what the techs do with it. This disadvantage requires some thought on the part of the GM. Every now and then something on the player's 'mech should malfunction or break but never catastrophicly or permanently. Generally speaking it should be the GM, not the player who decides what is wrong with the 'mech. Depending on the campaign situation, the player might not even find out what is wrong until something breaks. Good examples of quirky equipment are a heat sink that fails at the start of a scenario on a role of 9+ on a 2d6 or an (non-ultra) autocannon that jams if the player rolls a 2 when rolling to hit with it. Such problems are annoying but can be easily fixed after the battle. A character may take this disadvantage more than once. Each one adds another piece of chronicly faulty equipment to his 'mech",
+			"userdesc": "The character's battlemech may be in good repair but it just never seems to operate perfectly. Some chronic problem always seems to be there no matter what the techs do with it. This disadvantage requires some thought on the part of the GM. Every now and then something on the player's 'mech should malfunction or break but never catastrophicly or permanently. Generally speaking it should be the GM, not the player who decides what is wrong with the 'mech. Depending on the campaign situation, the player might not even find out what is wrong until something breaks. Good examples of quirky equipment are a heat sink that fails at the start of a scenario on a role of 9+ on a 2d6 or an (non-ultra) autocannon that jams if the player rolls a 2 when rolling to hit with it. Such problems are annoying but can be easily fixed after the battle. A character may take this disadvantage more than once. Each one adds another piece of chronicly faulty equipment to his 'mech",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "0a3c5006-1410-425f-8809-93d0305ad779",
+			"type": "trait",
+			"name": "Salvage Quality Battlemech",
+			"vtt_notes": "The character's battlemech is functional but it is in a state of disrepair. Salvage quality 'mechs cost a great deal to restore and cost a lot to maintain. This disadvantage is only available if the PCs are responsible for the repair and maintanence of their own machines. ",
+			"userdesc": "The character's battlemech is functional but it is in a state of disrepair. Salvage quality 'mechs cost a great deal to restore and cost a lot to maintain. This disadvantage is only available if the PCs are responsible for the repair and maintanence of their own machines. ",
+			"base_points": -5,
+			"calc": {
+				"points": -5
+			}
+		},
+		{
+			"id": "672ba8b8-dd9f-4681-bb34-3b583293d69b",
+			"type": "trait",
+			"name": "Older 'Mech",
+			"vtt_notes": "The pilot starts out with a battlmech that is not only behind the cutting edge, but is totally out of date. This disadvantage is only available in campaigns that start before 2850 or after 3052. This disadvantage is available only to Inner Sphere pilots. This will cause a pilot to start with a 3025 battlemech rather than a Star League technology battlemech. A pilot who takes the older mech disadvantage may not then take the tech upgrade advantage. The pilot may install new tech onto a 3025 'mech using the modification advantage if the pilot does so, he does not receive any points from this disadvantage.",
+			"userdesc": "The pilot starts out with a battlmech that is not only behind the cutting edge, but is totally out of date. This disadvantage is only available in campaigns that start before 2850 or after 3052. This disadvantage is available only to Inner Sphere pilots. This will cause a pilot to start with a 3025 battlemech rather than a Star League technology battlemech. A pilot who takes the older mech disadvantage may not then take the tech upgrade advantage. The pilot may install new tech onto a 3025 'mech using the modification advantage if the pilot does so, he does not receive any points from this disadvantage.",
+			"base_points": -10,
+			"calc": {
+				"points": -10
+			}
+		}
+	]
+}
